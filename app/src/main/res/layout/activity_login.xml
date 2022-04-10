@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/outline_shopping_cart_24"
+        android:layout_marginBottom="20dp"
+        app:tint="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_button"
+            android:layout_alignParentBottom="true"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_login_button"
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:id="@+id/skip_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip for now"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>
